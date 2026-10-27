@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weather Icon Display</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="default">
+  <main class="card">
+    <header>
+      <h1>Weather Icon Display</h1>
+      <p>Choose a weather condition to see its icon and description.</p>
+    </header>
+
+    <div class="picker">
+      <label for="condition">Weather condition</label>
+      <select id="condition"></select>
+    </div>
+
+    <section class="display" aria-live="polite">
+      <div class="icon-wrap"><span class="icon" id="icon" aria-hidden="true"></span></div>
+      <h2 id="title"></h2>
+      <p class="description" id="description"></p>
+      <p class="tip" id="tip"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
